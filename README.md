@@ -1,5 +1,23 @@
-# Requisitos Obrigatórios
-:warning: **Leia todos os requisitos atentamente e siga à risca o que for pedido. Não altere o nome de nenhuma função** :warning:
+# Bem vindo ao projeto Playground Functions
+
+## Comentários
+Foram desenvolvidas diversas funções usando JavaScript, teve requisitos que foram difíceis, mas graças a ajuda dos professores e bastante pesquisa, consegui resolver.
+
+---
+
+## Instalação do projeto localmente:
+
+1. No terminal, em um diretório de sua escolha, clonar o repositório:
+
+```
+git clone git@github.com:lucas-da-silva/trybe-playground-functions.git
+```
+
+2. Dentro do reposítorio, os arquivos challenges.js e challenges2.js possuem os códigos que eu criei. :rocket:
+
+--- 
+
+## Requisitos
 
 ## 1 - Crie uma função usando o operador &&
 
@@ -24,14 +42,6 @@ const macaco = false;
 
 Se a função for chamada com os valores `girafa` e `elefante` como parâmetro, retorna `true`, mas caso  seja chamada com os parâmetro `macaco` e `elefante` retorna `false`.
 
-**O que será testado:**
-
-- Retorne false quando se chamar a função compareTrue com um parâmetro de valor false e outro de valor true;
-
-- Retorne false quando se chamar a função compareTrue com dois parâmetros de valor false;
-
-- Retorne true quando se chamar a função compareTrue com dois parâmetros de valor true.
-
 </details>
 
 ## 2 - Crie uma função que calcula a área de um triângulo
@@ -45,15 +55,6 @@ Implemente a função <code>calcArea</code> que retorna o cálculo da área tota
 A função `calcArea` recebe o valor da base (`base`) e outro da altura (`height`) de um triângulo e retorna o cálculo da sua área.
 
 - Realize o cálculo da área total do triângulo utilizando a fórmula `(base * altura) / 2`.
-
-**O que será testado:**
-  
-- Retorne o valor 250 quando a funcão calcArea é chamada com o parâmetro base com o valor 10 e o parâmetro height com o valor 50;
-
-- Retorne o valor 5 quando a funcão `calcArea` é chamada com o parâmetro `base` com o valor 5 e o parâmetro `height` com o valor 2;
-
-- Retorne o valor 25.5 quando a funcão `calcArea` é chamada com o parâmetro `base` com o valor 51 e o parâmetro `height` com o valor 1.
-
 
 </details>
 
@@ -69,15 +70,6 @@ A função `splitSentence` recebe uma string como parâmetro e deve retornar um 
   
   Exemplo: se a função receber a string `'go Trybe'`, o retorno deverá ser `['go', 'Trybe']`.
 
-**O que será testado:**
-  
-- Retorne o valor `['go', 'Trybe']` se a função receber a string `'go Trybe'`;
-
-- Retorne o valor `['vamo', 'que', 'vamo']` se a função receber a string `'vamo que vamo'`;
-
-- Retorne o valor `['foguete']` se a função receber a string `'foguete'`.
-
-
 </details>
 
 
@@ -90,19 +82,6 @@ Implemente a função <code>concatName</code> que recebe um array de strings e r
   </summary> <br />
 A função `concatName` recebe um array de strings e deve retornar uma string com o formato `'ÚLTIMO ITEM, PRIMEIRO ITEM`, independente do tamanho do array.
   
-  Exemplo:
-
-- Caso o parâmetro passado para a função `concatName` seja o array `['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']`, a função deverá retornar `Paolillo, Lucas`.
-
-**O que será testado:**
-  
-- Retorne `'Paolillo, Lucas'` quando o parâmetro passado na funcão concatName seja `['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']`;
-
-- Retorne `'ré, foguete'` quando o parâmetro passado na funcão concatName seja `['foguete', 'não', 'tem', 'ré']`;
-
-- Retorne `'captain, captain'` quando o parâmetro passado na funcão concatName seja `['captain', 'my', 'captain']`.
-
-
 </details>
 
 ## 5 - Crie uma função que calcula a quantidade de pontos em um campeonato de futebol
@@ -117,16 +96,6 @@ A função `footballPoints` recebe o número de vitórias (`wins`) e o número d
 
 - `wins`: é o número de vitórias e vale 3 pontos;
 - `ties`: é o número de empates e vale 1 ponto.
-
-
-**O que será testado:**
-
-- Retorne `50` pontos quando o time tenha 14 vitórias e 8 empates;
-
-- Retorne `5` pontos quando o time tenha 1 vitória e 2 empates;
-
-- Retorne `0` pontos quando o time tenha 0 vitórias e 0 empates.
-
 
 </details>
 
@@ -144,15 +113,6 @@ A função deve retornar a quantidade de vezes que o **maior** número se repete
   Por exemplo:
 
 - Caso o parâmetro seja um array com valores `[9, 1, 2, 3, 9, 5, 7]`, a função deverá retornar `2`, que é a quantidade de vezes que o número `9` (maior número do array) se repete.
-
-**O que será testado:**
-
-- Retorne `2` quando o parâmetro passado na função highestCount seja `[9, 1, 2, 3, 9, 5, 7]`;
-
-- Retorne `1` quando o parâmetro passado na função highestCount seja `[0, 4, 4, 4, 9, 2, 1]`;
-
-- Retorne `3` quando o parâmetro passado na função highestCount seja `[0, 0, 0]`.
-
 
 </details>
 
@@ -185,17 +145,7 @@ Exemplo:
 
 - Caso os gatos estejam na mesma distância do rato, a função deverá retornar a string `'os gatos trombam e o rato foge'`. 
 
-**O que será testado:**
-
-- Retorne a string `'cat2'` caso a função `catAndMouse` receba os parâmetros onde gato `cat2` esteja a 2 unidades de distância do rato e `cat1` esteja a 3 unidades de distância do rato;
-
-- Retorne a string `'cat1'` caso a função catAndMouse receba os parâmetros onde gato `cat1` esteja a 6 unidades de distância do rato e `cat2` esteja a 12 unidades de distância do rato ;
-
-- Retorne a string `'os gatos trombam e o rato foge'` caso a função `catAndMouse` receba os parâmetros onde os gatos estejam na mesma distância do rato.
-
-
 </details>
-
 
 ## 8 - Crie uma função FizzBuzz
 
@@ -213,15 +163,6 @@ A função `fizzBuzz` recebe um array de números e para cada número do array �
 - Retorne a string `'bug!'` para cada número do array que não seja dividido por 3 nem por 5.
 
 Exemplo: caso o parâmetro seja [2, 15, 7, 9, 45], sua função deverá retornar `['bug!', 'fizzBuzz', 'bug!', 'fizz', 'fizzBuzz']`.
-
-**O que será testado:**
-  
-- Retorne as strings `['bug!', 'fizzBuzz', 'bug!', 'fizz', 'fizzBuzz']` quando é passado os parâmetros [2, 15, 7, 9, 45] para a função `fizzBuzz`;
-
-- Retorne as strings `['bug!', 'fizz']` quando é passado os parâmetros [7, 9] para a função `fizzBuzz`;
-
-- Retorne as strings `['fizz', 'buzz']` quando é passado os parâmetros [9, 25] para a função `fizzBuzz`.
-
 
 </details>
 
@@ -254,15 +195,6 @@ u -> 5
 5 -> u
   
   Por exemplo, caso o parâmetro de `decode` seja `'h3 th2r2!'`, o retorno deverá ser `'hi there!'`.
-
-**O que será testado:**
-  
-- Ao utilizar o parâmetro `hello`, deverá trazer como retorno `h2ll4`;
-- Ao utilizar o parâmetro `How are you today?` deverá trazer como retorno `H4w 1r2 y45 t4d1y?`;
-- Ao utilizar o parâmetro `This is an encoding test.` deverá trazer como retorno `Th3s 3s 1n 2nc4d3ng t2st.`;
-- Ao utilizar o parâmetro `go Trybe! `deverá trazer como retorno `g4 Tryb2!` .
-
-
 
 </details>
 
@@ -318,17 +250,10 @@ Por exemplo, se a função recebe os parâmetros `['React', 'Jest', 'HTML', 'CSS
 ]
 ```
 
-**O que será testado:**
-
-- Retorne uma lista de objetos ordenados quando é passada uma lista com 5 tecnologias;
-
-- Retorne a mensagem de erro `'Vazio!'` quando a lista não tiver tecnologias.
-
-
 </details>
 
 
-# Requisitos Bônus
+## Requisitos Bônus
 
 ## 11 - Crie uma função de número de telefone
 
@@ -343,20 +268,6 @@ Exemplo: caso o parâmetro da função seja `[1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]`,
 - Retorne a frase `'Array com tamanho incorreto.'` se a função receber um array com tamanho diferente de 11;
 
 - Retorne a string `'não é possível gerar um número de telefone com esses valores'` caso algum dos números do array seja **menor** que 0, **maior** que 9 ou se repita 3 vezes ou mais.
-
-
-**O que será testado:**
-  
-- Retorne a string 'Array com tamanho incorreto.' caso o array tenha o tamanho diferente de 11;
-
-- Retorne a string "não é possível gerar um número de telefone com esses valores" caso algum dos números do array seja menor que 0;
-
-- Retorne a string "não é possível gerar um número de telefone com esses valores" caso algum número do array seja maior que 9;
-
-- Retorne a string "não é possível gerar um número de telefone com esses valores" caso algum número do array se repetir 3 vezes ou mais;
-
-- Retorne um número de telefone, respeitando parênteses, traços e espaços caso os números do array estejam de acordo com as especificações.
-
 
 </details>
 
@@ -383,15 +294,6 @@ Implemente a função <code>triangleCheck</code> que verifica se é possível fo
   - O retorno da sua função deverá ser um booleano.
 
 Exemplo: o retorno de `triangleCheck(10, 14, 8)` deverá ser `true`.
-
-**O que será testado:**
-  
-- Retorne `false` quando a medida de qualquer um dos lados seja maior que a soma das medidas dos outros dois lados;
-
-- Retorne `false` quando a medida de qualquer um dos lados seja menor que o valor absoluto da diferença das medidas dos outros dois lados;
-
-- Retorne `true` quando a medida de qualquer um dos lados seja menor que a soma das medidas dos outros dois lados e maior que o valor absoluto da diferença entre os outros dois lados.
-
 
 </details>
 
@@ -430,7 +332,3 @@ Implemente a função `hydrate` que recebe uma string e retorna a sugestão de q
 - O número na frente de cada bebida deve estar entre 1 e 9.
 
 **De olho na dica 👀:** pesquise por algo similar a `get all integers inside a string js`.
-
-**O que será testado:**
-  
-- Retorne a sugestão de quantos copos de água deve-se beber ao receber uma string.
